@@ -1,0 +1,20 @@
+FROM node:16
+
+LABEL maintainer="Cuong Minh Vu" \
+    name="website" \
+    version="0.1"
+
+ENV key=value
+
+RUN apt update -y && apt upgrade -y
+
+WORKDIR /website
+
+COPY . ./
+
+RUN npm i --silent
+
+CMD [ "npm", "start" ]
+
+EXPOSE 3000
+
