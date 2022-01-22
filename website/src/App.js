@@ -1,22 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
 
+const visitors = [
+  {
+    name: 'you',
+  },
+  {
+    name: 'me',
+  },
+]
+
+const Greeting = ({name}) => {
+  console.log(name);
+  return (
+    <h1>
+      Welcome {name} to my page!
+    </h1>
+  )
+}
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        {visitors.map((visitor) => {
+          return <Greeting {...visitor} />
+        })}
+
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <p>Site is in contruction! 🔨</p>
       </header>
     </div>
   );
