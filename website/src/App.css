@@ -1,58 +1,132 @@
+html {
+  scrollbar-width: thin;
+  scrollbar-gutter: stable;
+}
+
 body {
   background-color: #282c34;
 }
+
 .main-container {
-  position: absolute;
   left: 0;
   right: 0;
   margin: 0 auto;
-  top: 10%;
-  width: 600px;
+  padding: 5% 0 4rem 0;
+  width: 100%;
+  max-width: 600px;
   text-align: center;
 }
-.main-container > h1, h2, p {
+
+.main-container>h1,
+h2,
+p {
   margin: 0;
   font-weight: lighter;
   color: white;
 }
-.main-container > h1 {
+
+.main-container>h1 {
   font-size: 2rem;
+  padding-right: 4em;
 }
-.main-container > h2 {
+
+.main-container>h2 {
+  font-size: 1.5rem;
+  padding-left: 3em;
+  padding-bottom: 0.5em;
+}
+
+.main-container>p {
   font-size: 1rem;
-  margin: .25em 0;
-  padding-left: 7em;
+  margin: 0.1em 0;
 }
-.main-container > p {
-  font-size: 1rem;
-  margin: .75em 0;
+
+#speaker {
+  padding: 0 0.4em;
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
 }
+
 .profileImg {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 1rem 0;
-} 
-.media-icons-wrapper {
-  padding: 0 10em;
 }
-.media-icons-wrapper > .media-icons {
+
+.media-icons-wrapper {
+  padding: 0 7em;
+}
+
+.media-icons-wrapper>.media-icons {
   margin: 1em 0;
   padding: 0;
-  background: #04C2E0;
-  border-radius: .75em;
+  background: #04c2e0;
+  border-radius: 0.75em;
   display: flex;
   justify-content: center;
   column-gap: 2em;
 }
-.media-icons-wrapper > .media-icons > li {
+
+.media-icons-wrapper>.media-icons>li {
   list-style: none;
-  padding: 2% 1% .5% 1%;
+  padding: 2% 1% 0.5% 1%;
 }
-.media-icons-wrapper > .media-icons > li img {
+
+.media-icons-wrapper>.media-icons>li img {
   height: 32px;
   width: 32px;
+  border-radius: 7px;
 }
+
 .link {
   color: #61dafb;
+}
+
+.menu-wrapper>.menu {
+  margin: 1em 0;
+  padding: 0;
+  background: #04c2e0;
+  border-radius: 0.75em;
+  display: flex;
+  justify-content: center;
+  column-gap: 1em;
+}
+
+.menu-wrapper>.menu>li {
+  list-style: none;
+  padding: 2% 2%;
+  margin: 1%;
+  color: black;
+  background: white;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.menu-wrapper>.menu>li:hover {
+  background: #defbff;
+  user-select: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .media-icons-wrapper {
+    padding: 0;
+  }
+}
+
+.about {
+  color: white;
+}
+
+footer {
+  position: fixed;
+  display: flex;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  padding: .3em 0 .3em 2em;
+  background: #04c2e0;
+  justify-content: center;
+  column-gap: 5rem;
 }

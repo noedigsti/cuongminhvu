@@ -1,0 +1,14 @@
+// Animate the size, outside
+.menu-wrapper>.menu>li:hover,
+.menu-wrapper>.menu>li:focus,
+.media-icons-wrapper>.media-icons>li img:hover,
+.media-icons-wrapper>.media-icons>li img:focus {
+  animation: pulse 1s;
+  box-shadow: 0 0 0 1em transparent;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 #DEFBFF;
+  }
+}
