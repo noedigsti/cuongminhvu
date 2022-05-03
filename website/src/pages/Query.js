@@ -1,7 +1,10 @@
 import React from 'react'
+import Layout from '../layouts/Layout'
 
 export default function Query() {
   return (
-    <div>Query</div>
+    <Layout title={"Query"}>
+      <p>Query</p>
+    </Layout>
   )
 }

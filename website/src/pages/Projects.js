@@ -1,11 +1,10 @@
-import React, { Component } from 'react'
+import React from "react";
+import Layout from "../layouts/Layout";
 
-export class Projects extends Component {
-  render() {
-    return (
-      <div>Projects</div>
-    )
-  }
+export default function Projects() {
+  return (
+    <Layout title={"Projects"}>
+      <p>My Projects</p>
+    </Layout>
+  );
 }
-
-export default Projects
