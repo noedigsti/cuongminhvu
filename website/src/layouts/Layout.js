@@ -25,7 +25,9 @@ const Layout = (props) => {
         <Links />
         <Navigation />
         {/* Content section to another js */}
-        <section id="content" ref={contentScroll}>{props.children}</section>
+        <section id="content" ref={contentScroll}>
+          <div className="inner-content">{props.children}</div>
+        </section>
         <Footer />
       </div>
     </HelmetProvider>

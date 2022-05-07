@@ -151,6 +151,10 @@ p {
   color: white;
 }
 
+.inner-content {
+  text-align: justify;
+}
+
 footer {
   position: fixed;
   display: flex;
