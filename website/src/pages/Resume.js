@@ -5,7 +5,7 @@ export class Resume extends Component {
   render() {
     return (
       <Layout title={"Resume"}>
-        <p>My Resume</p>
+        <a href="/Cuong Minh Vu Resume May2022.pdf">Click here to view!</a>
       </Layout>
     );
   }

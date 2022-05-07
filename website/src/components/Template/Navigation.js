@@ -29,7 +29,7 @@ export default function Navigation() {
       </p>
       <nav className="menu-wrapper">
         <ul className="menu">
-          {routes.map((l) => (
+          {routes.filter((l) => !l.label.match("Projects")).map((l) => (
               <li key={l.label} className={l.label} onClick={handleClick}>
                 {l.label}
               </li>

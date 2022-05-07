@@ -26,7 +26,9 @@ const Layout = (props) => {
         <Navigation />
         {/* Content section to another js */}
         <section id="content" ref={contentScroll}>
-          <div className="inner-content">{props.children}</div>
+          {props.children ? (
+            <div className="inner-content">{props.children}</div>
+          ) : null}
         </section>
         <Footer />
       </div>
