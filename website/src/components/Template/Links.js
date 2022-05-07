@@ -43,7 +43,7 @@ export default function Links() {
           <li>
             <a
               className="link"
-              href="https://github.com/noedigsti"
+              href="mailto:vuminhcuong999@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
             >
