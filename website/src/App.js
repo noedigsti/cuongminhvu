@@ -12,6 +12,7 @@ import Projects from "./pages/Projects";
 import Resume from "./pages/Resume";
 import Query from "./pages/Query";
 import NotFound from "./pages/NotFound";
+import Games from "./pages/Games";
 
 const App = () => {
   // Wrap this inside a Layout
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="About" element={<About />} />
         <Route path="Projects" element={<Projects />} />
         <Route path="Resume" element={<Resume />} />
+        <Route path="Games" element={<Games />} />
         <Route path="Query" element={<Query />} />
         <Route path='*' element={<NotFound />} status={404} />
       </Routes>

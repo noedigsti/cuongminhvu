@@ -17,6 +17,10 @@ const routes = [
         path: '/Resume'
     },
     {
+        label: "Games",
+        path: '/Games'
+    },
+    {
         label: "Query",
         path: '/Query'
     },
