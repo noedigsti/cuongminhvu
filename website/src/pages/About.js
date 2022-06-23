@@ -16,6 +16,9 @@ const About = () => {
       </p>
       <br />
       <p>
+        I enjoy building things that live on the internet, whether that be
+        websites, applications, or anything in between. My goal is to always
+        build products that are well-designed, well-coded, and well-tested.
         
         ...
       </p>
