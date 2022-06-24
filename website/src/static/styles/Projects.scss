@@ -1,3 +1,4 @@
+@use 'vars';
 #projects {
   display: flex;
   flex-wrap: wrap;
@@ -22,8 +23,8 @@
 }
 
 .card:hover {
-  background: #04c2e0;
-  height: 20em;
+  background: vars.$theme-color;
+  height: 12em;
 }
 
 .card:hover .card_desc{
@@ -47,18 +48,18 @@
 .card_title {
   display: block;
   text-transform: uppercase;
-  font-size: 1.2em;
+  font-size: calc(vars.$font-size-p-default + 0.2em);
   font-family: inherit;
   margin-bottom: 6px;
-  color: black;
+  color: vars.$text-color-default;
 }
 
 .card_desc {
-  font-size: 1rem;
+  font-size: vars.$font-size-p-default;
   font-family: inherit;
   margin: 0 1em 1em 0;
   display: block;
-  color: black;
+  color: vars.$text-color-default;
   overflow-x: clip;
   text-overflow: ellipsis;
   white-space: nowrap;

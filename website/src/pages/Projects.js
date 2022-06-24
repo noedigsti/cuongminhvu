@@ -16,25 +16,31 @@ export default function Projects() {
         <Card
           projectTitle={"Todo List"}
           projectDesc={
-            "I made a todo list app using React.js and Firebase. It's a simple app that I made using React.js and Firebase."
+            "I made a todo list app using React.js and Firebase."
           }
         />
         <Card
           projectTitle={"Appointments"}
           projectDesc={
-            "I made a simple appointment app using React.js and Firebase. It's a simple app that I made using React.js and Firebase."
+            "I made a simple appointment app using React.js and Firebase."
           }
         />
         <Card
           projectTitle={"Recommendations"}
           projectDesc={
-            "This is a simple app that I made using React.js and Firebase. It's a simple app that I made using React.js and Firebase."
+            "This is a simple recommendation app that I made using React.js and Firebase."
           }
         />
         <Card
           projectTitle={"Playlists"}
           projectDesc={
-            "This is a playlist app that I made using React.js and Firebase. It's a simple app that I made using React.js and Firebase."
+            "This is a playlist app that I made using React.js and Firebase. It reveals public playlists from my Youtube channel."
+          }
+        />
+        <Card
+          projectTitle={"LeetCode Collection"}
+          projectDesc={
+            "A collection of easy/medium LeetCode problems that I have solved."
           }
         />
       </div>

@@ -13,6 +13,10 @@ export default function Games() {
             <a href="https://docs.google.com/presentation/d/15PH03cZcGr7CyMbNW4jlzK9aSfJMHost/edit?usp=sharing&ouid=116896269889510596721&rtpof=true&sd=true">
               Link to Presentation
             </a>
+            <br/>
+            <a href="https://drive.google.com/file/d/1DV1m42KSnt10SLd4_0aR8XciBqzCBSj9/view?usp=sharing">
+              Link to Build
+            </a>
             <div className="project-tags">
               <ul>
                 <li>Single player</li>
