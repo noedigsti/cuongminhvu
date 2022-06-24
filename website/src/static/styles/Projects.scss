@@ -1,0 +1,67 @@
+@use 'vars';
+#projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 5em;
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.2);
+  border-radius: 1em;
+  background: white;
+  box-sizing: border-box;
+  text-decoration: none;
+  transition: height 0.5s;
+  -webkit-transition: height 0.5s;
+}
+
+.card:hover {
+  background: vars.$theme-color;
+  height: 12em;
+}
+
+.card:hover .card_desc{
+  overflow: clip;
+  white-space: unset;
+}
+
+.card_image {
+  width: 45%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 18px;
+}
+
+.card_content {
+  display: block;
+  width: 55%;
+  padding-left: 20px;
+}
+
+.card_title {
+  display: block;
+  text-transform: uppercase;
+  font-size: calc(vars.$font-size-p-default + 0.2em);
+  font-family: inherit;
+  margin-bottom: 6px;
+  color: vars.$text-color-default;
+}
+
+.card_desc {
+  font-size: vars.$font-size-p-default;
+  font-family: inherit;
+  margin: 0 1em 1em 0;
+  display: block;
+  color: vars.$text-color-default;
+  overflow-x: clip;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 1rem;
+}

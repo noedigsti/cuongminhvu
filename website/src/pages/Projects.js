@@ -1,11 +1,49 @@
-import React, { Component } from 'react'
+import "../static/styles/Projects.scss";
+import React from "react";
+import Layout from "../layouts/Layout";
+import Card from "../components/Template/Card";
 
-export class Projects extends Component {
-  render() {
-    return (
-      <div>Projects</div>
-    )
-  }
+export default function Projects() {
+  return (
+    <Layout title={"Projects"}>
+      <div id="projects">
+        <Card
+          projectTitle={"Daily Reminder"}
+          projectDesc={
+            "I showed my friend how to use a daily reminder app to remind him to do something every day. It pings our Discord server every day to remind us to do something."
+          }
+        />
+        <Card
+          projectTitle={"Todo List"}
+          projectDesc={
+            "I made a todo list app using React.js and Firebase."
+          }
+        />
+        <Card
+          projectTitle={"Appointments"}
+          projectDesc={
+            "I made a simple appointment app using React.js and Firebase."
+          }
+        />
+        <Card
+          projectTitle={"Recommendations"}
+          projectDesc={
+            "This is a simple recommendation app that I made using React.js and Firebase."
+          }
+        />
+        <Card
+          projectTitle={"Playlists"}
+          projectDesc={
+            "This is a playlist app that I made using React.js and Firebase. It reveals public playlists from my Youtube channel."
+          }
+        />
+        <Card
+          projectTitle={"LeetCode Collection"}
+          projectDesc={
+            "A collection of easy/medium LeetCode problems that I have solved."
+          }
+        />
+      </div>
+    </Layout>
+  );
 }
-
-export default Projects

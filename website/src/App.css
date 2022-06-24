@@ -2,42 +2,43 @@ html {
   scrollbar-width: thin;
   scrollbar-gutter: stable;
   scroll-behavior: smooth;
+  user-select: none;
 }
 
 body {
   background-color: #282c34;
+  color: white;
 }
 
-.main-container {
+#wrapper {
   left: 0;
   right: 0;
   margin: 0 auto;
-  padding: 5% 0 4rem 0;
+  padding: 4% 0 4rem 0;
   width: 100%;
   max-width: 600px;
   text-align: center;
 }
 
-.main-container>h1,
+#wrapper h1,
 h2,
 p {
   margin: 0;
   font-weight: lighter;
-  color: white;
 }
 
-.main-container>h1 {
+#wrapper h1 {
   font-size: 2rem;
   padding-right: 4em;
 }
 
-.main-container>h2 {
+#wrapper h2 {
   font-size: 1.5rem;
   padding-left: 3em;
   padding-bottom: 0.5em;
 }
 
-.main-container>p {
+#wrapper p {
   font-size: 1rem;
   margin: 0.1em 0;
 }
@@ -89,10 +90,6 @@ p {
   border-radius: 7px;
 }
 
-.link {
-  color: #61dafb;
-}
-
 .menu-wrapper>.menu {
   margin: 1em 0;
   padding: 0;
@@ -103,29 +100,24 @@ p {
   column-gap: 1em;
 }
 
-.menu-wrapper>.menu>li {
+.menu-wrapper>.menu li {
   list-style: none;
-  padding: 2% 2%;
-  margin: 1%;
+  margin: .5em;
   color: black;
   background: white;
-  border-radius: 0.5rem;
   cursor: pointer;
-  user-select: none;
+  border-radius: inherit;
+  padding: .5em;
 }
 
-.menu-wrapper>.menu>li:hover {
+.menu-wrapper>.menu li:hover {
   background: #0A66C2;
   color: white;
 }
 
-.menu-wrapper>.menu>.li_visited {
+.menu-wrapper>.menu .li_visited {
   background: #0A66C2;
   color: white;
-}
-
-.menu-wrapper>.menu>li a {
-  text-decoration: none;
 }
 
 .menu-wrapper>.menu>li a:visited {
@@ -155,6 +147,49 @@ p {
   animation: fadeSlideIn 600ms;
 }
 
+#content a {
+  color: white;
+}
+
+.inner-content {
+  text-align: justify;
+  padding: 1em;
+  border-radius: .75em;
+}
+
+#games-gallery img,iframe {
+  border-radius: .75em;
+  width: 100%;
+}
+
+.project-tags > ul {
+  padding: 1em 0;
+  margin: 0;
+  text-align: center;
+}
+
+.project-tags > ul > li {
+  display: inline-block;
+  background: #04c2e0;
+  border-radius: .75em;
+  line-height: 2em;
+  margin: 0 .2em;
+  padding: .2em;
+}
+
+.video_wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9, for an aspect ratio of 1:1 change to this value to 100% */ 
+}
+
+.video_wrapper > iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 footer {
   position: fixed;
   display: flex;
@@ -164,5 +199,5 @@ footer {
   padding: .3em 2em;
   background: #04c2e0;
   justify-content: center;
-  column-gap: 5rem;
+  column-gap: 3rem;
 }

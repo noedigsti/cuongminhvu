@@ -1,24 +1,29 @@
 // import { useState } from "react";
 
-export default function About() {
-  // const [toggle, setToggle] = useState(true)
-  // const clickHandler = () => {
-  //   setToggle(!toggle)
-  // }
-  // useEffect(() => {}, [toggle])
-  // const [display, setDisplay] = useState('none');
-  // const [opacity, setOpacity] = useState(1);
+import Layout from "../layouts/Layout";
 
-  // const toggleVisibility = () => {
-  //   if (display === 'none') {
-  //     setDisplay('');
-  //     setOpacity(1);
-  //   } else {
-  //     setOpacity(0);
-  //     setTimeout(() => setDisplay('none'), 1000);
-  //   }
-  // };
+const About = () => {
   return (
-    <></>
+    <Layout title={"About"}>
+      <p>Hello! 👋</p>
+      <br />
+      <p>
+        I'm a Graduate student with a Bachelor's Degree in Games and
+        Interactive Environments from {" "}
+        <a href="https://www.qut.edu.au/">
+          Queensland University of Technology
+        </a>
+      </p>
+      <br />
+      <p>
+        I enjoy building things that live on the internet, whether that be
+        websites, applications, or anything in between. My goal is to always
+        build products that are well-designed, well-coded, and well-tested.
+        
+        ...
+      </p>
+    </Layout>
   );
-}
+};
+
+export default About;
