@@ -21,8 +21,10 @@ export default function Query() {
   return (
     <>
       <Layout title={"Query"}>
-      </Layout>
-      <pre style={{textAlign: 'none', color: 'white'}}>{!data ? "Loading..." : data}</pre>
+      
+      <pre style={{textAlign: 'none', color: 'white'}}>{!data ? "Loading..." : data}</pre
+      
+      </Layout>>
     </>
   );
 }
